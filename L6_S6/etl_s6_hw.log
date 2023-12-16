@@ -1,0 +1,80 @@
+gbus
+*** Found local files:
+***   * /home/gbss/airflow/logs/dag_id=l6_s6_hw/run_id=manual__2023-12-16T21:25:10.974572+00:00/task_id=print_random_numeric_by_bash/attempt=1.log
+[2023-12-16, 21:25:13 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l6_s6_hw.print_random_numeric_by_bash manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:13 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l6_s6_hw.print_random_numeric_by_bash manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:13 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-16, 21:25:13 UTC] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): print_random_numeric_by_bash> on 2023-12-16 21:25:10.974572+00:00
+[2023-12-16, 21:25:13 UTC] {standard_task_runner.py:57} INFO - Started process 351543 to run task
+[2023-12-16, 21:25:13 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l6_s6_hw', 'print_random_numeric_by_bash', 'manual__2023-12-16T21:25:10.974572+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/etl_s6_hw.py', '--cfg-path', '/tmp/tmpnofx2ezo']
+[2023-12-16, 21:25:13 UTC] {standard_task_runner.py:85} INFO - Job 166: Subtask print_random_numeric_by_bash
+[2023-12-16, 21:25:13 UTC] {task_command.py:416} INFO - Running <TaskInstance: l6_s6_hw.print_random_numeric_by_bash manual__2023-12-16T21:25:10.974572+00:00 [running]> on host gbus
+[2023-12-16, 21:25:13 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l6_s6_hw' AIRFLOW_CTX_TASK_ID='print_random_numeric_by_bash' AIRFLOW_CTX_EXECUTION_DATE='2023-12-16T21:25:10.974572+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-16T21:25:10.974572+00:00'
+[2023-12-16, 21:25:13 UTC] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-12-16, 21:25:13 UTC] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo $RANDOM']
+[2023-12-16, 21:25:13 UTC] {subprocess.py:86} INFO - Output:
+[2023-12-16, 21:25:13 UTC] {subprocess.py:93} INFO - 16172
+[2023-12-16, 21:25:13 UTC] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-12-16, 21:25:13 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l6_s6_hw, task_id=print_random_numeric_by_bash, execution_date=20231216T212510, start_date=20231216T212513, end_date=20231216T212513
+[2023-12-16, 21:25:13 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-16, 21:25:13 UTC] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+
+
+
+-------------------
+
+gbus
+*** Found local files:
+***   * /home/gbss/airflow/logs/dag_id=l6_s6_hw/run_id=manual__2023-12-16T21:25:10.974572+00:00/task_id=print_random_number_square_python/attempt=1.log
+[2023-12-16, 21:25:16 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l6_s6_hw.print_random_number_square_python manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:16 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l6_s6_hw.print_random_number_square_python manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:16 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-16, 21:25:16 UTC] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): print_random_number_square_python> on 2023-12-16 21:25:10.974572+00:00
+[2023-12-16, 21:25:16 UTC] {standard_task_runner.py:57} INFO - Started process 351548 to run task
+[2023-12-16, 21:25:16 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l6_s6_hw', 'print_random_number_square_python', 'manual__2023-12-16T21:25:10.974572+00:00', '--job-id', '167', '--raw', '--subdir', 'DAGS_FOLDER/etl_s6_hw.py', '--cfg-path', '/tmp/tmpbw3etulz']
+[2023-12-16, 21:25:16 UTC] {standard_task_runner.py:85} INFO - Job 167: Subtask print_random_number_square_python
+[2023-12-16, 21:25:16 UTC] {task_command.py:416} INFO - Running <TaskInstance: l6_s6_hw.print_random_number_square_python manual__2023-12-16T21:25:10.974572+00:00 [running]> on host gbus
+[2023-12-16, 21:25:16 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l6_s6_hw' AIRFLOW_CTX_TASK_ID='print_random_number_square_python' AIRFLOW_CTX_EXECUTION_DATE='2023-12-16T21:25:10.974572+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-16T21:25:10.974572+00:00'
+[2023-12-16, 21:25:16 UTC] {python.py:194} INFO - Done. Returned value was: Random number: 89, its square 7921.
+[2023-12-16, 21:25:16 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l6_s6_hw, task_id=print_random_number_square_python, execution_date=20231216T212510, start_date=20231216T212516, end_date=20231216T212516
+[2023-12-16, 21:25:16 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-16, 21:25:16 UTC] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+
+------------------------
+
+gbus
+*** Found local files:
+***   * /home/gbss/airflow/logs/dag_id=l6_s6_hw/run_id=manual__2023-12-16T21:25:10.974572+00:00/task_id=get_data/attempt=1.log
+[2023-12-16, 21:25:18 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l6_s6_hw.get_data manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:18 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l6_s6_hw.get_data manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:18 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-16, 21:25:18 UTC] {taskinstance.py:1382} INFO - Executing <Task(SimpleHttpOperator): get_data> on 2023-12-16 21:25:10.974572+00:00
+[2023-12-16, 21:25:18 UTC] {standard_task_runner.py:57} INFO - Started process 351555 to run task
+[2023-12-16, 21:25:18 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l6_s6_hw', 'get_data', 'manual__2023-12-16T21:25:10.974572+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/etl_s6_hw.py', '--cfg-path', '/tmp/tmpy4b0sviv']
+[2023-12-16, 21:25:18 UTC] {standard_task_runner.py:85} INFO - Job 168: Subtask get_data
+[2023-12-16, 21:25:18 UTC] {task_command.py:416} INFO - Running <TaskInstance: l6_s6_hw.get_data manual__2023-12-16T21:25:10.974572+00:00 [running]> on host gbus
+[2023-12-16, 21:25:18 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l6_s6_hw' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-16T21:25:10.974572+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-16T21:25:10.974572+00:00'
+[2023-12-16, 21:25:18 UTC] {http.py:143} INFO - Calling HTTP method
+[2023-12-16, 21:25:18 UTC] {base.py:73} INFO - Using connection ID 'http_openweathermap_api' for task execution.
+[2023-12-16, 21:25:19 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l6_s6_hw, task_id=get_data, execution_date=20231216T212510, start_date=20231216T212518, end_date=20231216T212519
+[2023-12-16, 21:25:19 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-16, 21:25:19 UTC] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+
+-----------------------
+
+gbus
+*** Found local files:
+***   * /home/gbss/airflow/logs/dag_id=l6_s6_hw/run_id=manual__2023-12-16T21:25:10.974572+00:00/task_id=print_data/attempt=1.log
+[2023-12-16, 21:25:22 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l6_s6_hw.print_data manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:22 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l6_s6_hw.print_data manual__2023-12-16T21:25:10.974572+00:00 [queued]>
+[2023-12-16, 21:25:22 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-16, 21:25:22 UTC] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): print_data> on 2023-12-16 21:25:10.974572+00:00
+[2023-12-16, 21:25:22 UTC] {standard_task_runner.py:57} INFO - Started process 351562 to run task
+[2023-12-16, 21:25:22 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l6_s6_hw', 'print_data', 'manual__2023-12-16T21:25:10.974572+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/etl_s6_hw.py', '--cfg-path', '/tmp/tmphia38ts9']
+[2023-12-16, 21:25:22 UTC] {standard_task_runner.py:85} INFO - Job 169: Subtask print_data
+[2023-12-16, 21:25:22 UTC] {task_command.py:416} INFO - Running <TaskInstance: l6_s6_hw.print_data manual__2023-12-16T21:25:10.974572+00:00 [running]> on host gbus
+[2023-12-16, 21:25:22 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l6_s6_hw' AIRFLOW_CTX_TASK_ID='print_data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-16T21:25:10.974572+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-16T21:25:10.974572+00:00'
+[2023-12-16, 21:25:22 UTC] {python.py:194} INFO - Done. Returned value was: {'coord': {'lon': 61.4368, 'lat': 55.1644}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01n'}], 'base': 'stations', 'main': {'temp': 255.17, 'feels_like': 248.17, 'temp_min': 255.17, 'temp_max': 255.17, 'pressure': 1025, 'humidity': 85}, 'visibility': 10000, 'wind': {'speed': 4, 'deg': 150}, 'clouds': {'all': 0}, 'dt': 1702761924, 'sys': {'type': 1, 'id': 8975, 'country': 'RU', 'sunrise': 1702786524, 'sunset': 1702812291}, 'timezone': 18000, 'id': 1508291, 'name': 'Chelyabinsk', 'cod': 200}
+[2023-12-16, 21:25:22 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l6_s6_hw, task_id=print_data, execution_date=20231216T212510, start_date=20231216T212522, end_date=20231216T212522
+[2023-12-16, 21:25:22 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-16, 21:25:22 UTC] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
