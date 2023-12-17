@@ -1,0 +1,23 @@
+[2023-12-17, 15:38:36 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l7_s7_hw.choose_branch_by_temperature manual__2023-12-17T15:38:18.728085+00:00 [queued]>
+[2023-12-17, 15:38:36 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l7_s7_hw.choose_branch_by_temperature manual__2023-12-17T15:38:18.728085+00:00 [queued]>
+[2023-12-17, 15:38:36 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-17, 15:38:36 UTC] {taskinstance.py:1382} INFO - Executing <Task(_BranchPythonDecoratedOperator): choose_branch_by_temperature> on 2023-12-17 15:38:18.728085+00:00
+[2023-12-17, 15:38:36 UTC] {standard_task_runner.py:57} INFO - Started process 216047 to run task
+[2023-12-17, 15:38:36 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l7_s7_hw', 'choose_branch_by_temperature', 'manual__2023-12-17T15:38:18.728085+00:00', '--job-id', '213', '--raw', '--subdir', 'DAGS_FOLDER/etl_s7_hw.py', '--cfg-path', '/tmp/tmphskltnwt']
+[2023-12-17, 15:38:36 UTC] {standard_task_runner.py:85} INFO - Job 213: Subtask choose_branch_by_temperature
+[2023-12-17, 15:38:36 UTC] {task_command.py:416} INFO - Running <TaskInstance: l7_s7_hw.choose_branch_by_temperature manual__2023-12-17T15:38:18.728085+00:00 [running]> on host gbus
+[2023-12-17, 15:38:36 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l7_s7_hw' AIRFLOW_CTX_TASK_ID='choose_branch_by_temperature' AIRFLOW_CTX_EXECUTION_DATE='2023-12-17T15:38:18.728085+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-17T15:38:18.728085+00:00'
+
+
+
+[2023-12-17, 15:38:36 UTC] {etl_s7_hw.py:122} INFO - Current temp: 260.38
+
+
+
+[2023-12-17, 15:38:36 UTC] {python.py:194} INFO - Done. Returned value was: print_cool
+[2023-12-17, 15:38:36 UTC] {python.py:227} INFO - Branch callable return print_cool
+[2023-12-17, 15:38:36 UTC] {skipmixin.py:173} INFO - Following branch print_cool
+[2023-12-17, 15:38:36 UTC] {skipmixin.py:239} INFO - Skipping tasks [('print_hot', -1), ('print_zero', -1)]
+[2023-12-17, 15:38:36 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l7_s7_hw, task_id=choose_branch_by_temperature, execution_date=20231217T153818, start_date=20231217T153836, end_date=20231217T153836
+[2023-12-17, 15:38:36 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17, 15:38:36 UTC] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
