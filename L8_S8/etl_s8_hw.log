@@ -1,0 +1,210 @@
+[2023-12-23, 23:52:09 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l8_s8_hw.download_hotel manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:09 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l8_s8_hw.download_hotel manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:09 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-23, 23:52:09 UTC] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): download_hotel> on 2023-12-23 23:52:05.942413+00:00
+[2023-12-23, 23:52:09 UTC] {standard_task_runner.py:57} INFO - Started process 162539 to run task
+[2023-12-23, 23:52:09 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l8_s8_hw', 'download_hotel', 'manual__2023-12-23T23:52:05.942413+00:00', '--job-id', '307', '--raw', '--subdir', 'DAGS_FOLDER/etl_s8_hw.py', '--cfg-path', '/tmp/tmpnyteue8k']
+[2023-12-23, 23:52:09 UTC] {standard_task_runner.py:85} INFO - Job 307: Subtask download_hotel
+[2023-12-23, 23:52:09 UTC] {task_command.py:416} INFO - Running <TaskInstance: l8_s8_hw.download_hotel manual__2023-12-23T23:52:05.942413+00:00 [running]> on host gbus
+[2023-12-23, 23:52:09 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l8_s8_hw' AIRFLOW_CTX_TASK_ID='download_hotel' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T23:52:05.942413+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-23T23:52:05.942413+00:00'
+[2023-12-23, 23:52:09 UTC] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-12-23, 23:52:09 UTC] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -sSLo /home/gbss/course_de_etl/HW8/downloads/hotel.csv https://raw.githubusercontent.com/alexpgb/ETL_2023/main/L8_S8/hotel.csv']
+[2023-12-23, 23:52:09 UTC] {subprocess.py:86} INFO - Output:
+[2023-12-23, 23:52:10 UTC] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-12-23, 23:52:10 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l8_s8_hw, task_id=download_hotel, execution_date=20231223T235205, start_date=20231223T235209, end_date=20231223T235210
+[2023-12-23, 23:52:10 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-23, 23:52:10 UTC] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+[2023-12-23, 23:52:12 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l8_s8_hw.download_clients manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:12 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l8_s8_hw.download_clients manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:12 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-23, 23:52:12 UTC] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): download_clients> on 2023-12-23 23:52:05.942413+00:00
+[2023-12-23, 23:52:12 UTC] {standard_task_runner.py:57} INFO - Started process 162647 to run task
+[2023-12-23, 23:52:12 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l8_s8_hw', 'download_clients', 'manual__2023-12-23T23:52:05.942413+00:00', '--job-id', '308', '--raw', '--subdir', 'DAGS_FOLDER/etl_s8_hw.py', '--cfg-path', '/tmp/tmpixsja7wa']
+[2023-12-23, 23:52:12 UTC] {standard_task_runner.py:85} INFO - Job 308: Subtask download_clients
+[2023-12-23, 23:52:13 UTC] {task_command.py:416} INFO - Running <TaskInstance: l8_s8_hw.download_clients manual__2023-12-23T23:52:05.942413+00:00 [running]> on host gbus
+[2023-12-23, 23:52:13 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l8_s8_hw' AIRFLOW_CTX_TASK_ID='download_clients' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T23:52:05.942413+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-23T23:52:05.942413+00:00'
+[2023-12-23, 23:52:13 UTC] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-12-23, 23:52:13 UTC] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -sSLo /home/gbss/course_de_etl/HW8/downloads/clients.csv https://raw.githubusercontent.com/alexpgb/ETL_2023/main/L8_S8/clients.csv']
+[2023-12-23, 23:52:13 UTC] {subprocess.py:86} INFO - Output:
+[2023-12-23, 23:52:13 UTC] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-12-23, 23:52:13 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l8_s8_hw, task_id=download_clients, execution_date=20231223T235205, start_date=20231223T235212, end_date=20231223T235213
+[2023-12-23, 23:52:13 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-23, 23:52:13 UTC] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+***   * /home/gbss/airflow/logs/dag_id=l8_s8_hw/run_id=manual__2023-12-23T23:52:05.942413+00:00/task_id=download_booking/attempt=1.log
+[2023-12-23, 23:52:16 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l8_s8_hw.download_booking manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:16 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l8_s8_hw.download_booking manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:16 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-23, 23:52:16 UTC] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): download_booking> on 2023-12-23 23:52:05.942413+00:00
+[2023-12-23, 23:52:16 UTC] {standard_task_runner.py:57} INFO - Started process 162655 to run task
+[2023-12-23, 23:52:16 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l8_s8_hw', 'download_booking', 'manual__2023-12-23T23:52:05.942413+00:00', '--job-id', '309', '--raw', '--subdir', 'DAGS_FOLDER/etl_s8_hw.py', '--cfg-path', '/tmp/tmpn07gfug4']
+[2023-12-23, 23:52:16 UTC] {standard_task_runner.py:85} INFO - Job 309: Subtask download_booking
+[2023-12-23, 23:52:16 UTC] {task_command.py:416} INFO - Running <TaskInstance: l8_s8_hw.download_booking manual__2023-12-23T23:52:05.942413+00:00 [running]> on host gbus
+[2023-12-23, 23:52:16 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l8_s8_hw' AIRFLOW_CTX_TASK_ID='download_booking' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T23:52:05.942413+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-23T23:52:05.942413+00:00'
+[2023-12-23, 23:52:16 UTC] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-12-23, 23:52:16 UTC] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -sSLo /home/gbss/course_de_etl/HW8/downloads/booking.csv https://raw.githubusercontent.com/alexpgb/ETL_2023/main/L8_S8/booking.csv']
+[2023-12-23, 23:52:16 UTC] {subprocess.py:86} INFO - Output:
+[2023-12-23, 23:52:35 UTC] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-12-23, 23:52:35 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l8_s8_hw, task_id=download_booking, execution_date=20231223T235205, start_date=20231223T235216, end_date=20231223T235235
+[2023-12-23, 23:52:35 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-23, 23:52:35 UTC] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+
+***   * /home/gbss/airflow/logs/dag_id=l8_s8_hw/run_id=manual__2023-12-23T23:52:05.942413+00:00/task_id=condition_is_True/attempt=1.log
+[2023-12-23, 23:52:38 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l8_s8_hw.condition_is_True manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:38 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l8_s8_hw.condition_is_True manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:38 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-23, 23:52:38 UTC] {taskinstance.py:1382} INFO - Executing <Task(ShortCircuitOperator): condition_is_True> on 2023-12-23 23:52:05.942413+00:00
+[2023-12-23, 23:52:38 UTC] {standard_task_runner.py:57} INFO - Started process 162846 to run task
+[2023-12-23, 23:52:38 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l8_s8_hw', 'condition_is_True', 'manual__2023-12-23T23:52:05.942413+00:00', '--job-id', '310', '--raw', '--subdir', 'DAGS_FOLDER/etl_s8_hw.py', '--cfg-path', '/tmp/tmpje6w8pmi']
+[2023-12-23, 23:52:38 UTC] {standard_task_runner.py:85} INFO - Job 310: Subtask condition_is_True
+[2023-12-23, 23:52:38 UTC] {task_command.py:416} INFO - Running <TaskInstance: l8_s8_hw.condition_is_True manual__2023-12-23T23:52:05.942413+00:00 [running]> on host gbus
+[2023-12-23, 23:52:38 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l8_s8_hw' AIRFLOW_CTX_TASK_ID='condition_is_True' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T23:52:05.942413+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-23T23:52:05.942413+00:00'
+[2023-12-23, 23:52:38 UTC] {etl_s8_hw.py:34} INFO - /home/gbss/course_de_etl/HW8/downloads/hotel.csv is exists True
+[2023-12-23, 23:52:38 UTC] {etl_s8_hw.py:34} INFO - /home/gbss/course_de_etl/HW8/downloads/clients.csv is exists True
+[2023-12-23, 23:52:38 UTC] {etl_s8_hw.py:34} INFO - /home/gbss/course_de_etl/HW8/downloads/booking.csv is exists True
+[2023-12-23, 23:52:38 UTC] {python.py:194} INFO - Done. Returned value was: True
+[2023-12-23, 23:52:38 UTC] {python.py:264} INFO - Condition result is True
+[2023-12-23, 23:52:38 UTC] {python.py:267} INFO - Proceeding with downstream tasks...
+[2023-12-23, 23:52:38 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l8_s8_hw, task_id=condition_is_True, execution_date=20231223T235205, start_date=20231223T235238, end_date=20231223T235238
+[2023-12-23, 23:52:38 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-23, 23:52:38 UTC] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+
+***   * /home/gbss/airflow/logs/dag_id=l8_s8_hw/run_id=manual__2023-12-23T23:52:05.942413+00:00/task_id=run_transform/attempt=1.log
+[2023-12-23, 23:52:40 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l8_s8_hw.run_transform manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:40 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l8_s8_hw.run_transform manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:52:40 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-23, 23:52:40 UTC] {taskinstance.py:1382} INFO - Executing <Task(_PythonExternalDecoratedOperator): run_transform> on 2023-12-23 23:52:05.942413+00:00
+[2023-12-23, 23:52:40 UTC] {standard_task_runner.py:57} INFO - Started process 162850 to run task
+[2023-12-23, 23:52:40 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l8_s8_hw', 'run_transform', 'manual__2023-12-23T23:52:05.942413+00:00', '--job-id', '311', '--raw', '--subdir', 'DAGS_FOLDER/etl_s8_hw.py', '--cfg-path', '/tmp/tmpeu3f1poa']
+[2023-12-23, 23:52:40 UTC] {standard_task_runner.py:85} INFO - Job 311: Subtask run_transform
+[2023-12-23, 23:52:40 UTC] {task_command.py:416} INFO - Running <TaskInstance: l8_s8_hw.run_transform manual__2023-12-23T23:52:05.942413+00:00 [running]> on host gbus
+[2023-12-23, 23:52:40 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l8_s8_hw' AIRFLOW_CTX_TASK_ID='run_transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T23:52:05.942413+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-23T23:52:05.942413+00:00'
+[2023-12-23, 23:52:40 UTC] {python.py:779} WARNING - When checking for Airflow installed in venv got Command '['/home/gbss/course_de_etl/pd/bin/python', '-c', 'from airflow import __version__; print(__version__)']' returned non-zero exit status 1.
+[2023-12-23, 23:52:40 UTC] {python.py:780} WARNING - This means that Airflow is not properly installed by  /home/gbss/course_de_etl/pd/bin/python. Airflow context keys will not be available. Please Install Airflow 2.7.3 in your environment to access them.
+[2023-12-23, 23:52:40 UTC] {process_utils.py:182} INFO - Executing cmd: /home/gbss/course_de_etl/pd/bin/python /tmp/tmddr6fzo1o/script.py /tmp/tmddr6fzo1o/script.in /tmp/tmddr6fzo1o/script.out /tmp/tmddr6fzo1o/string_args.txt /tmp/tmddr6fzo1o/termination.log
+[2023-12-23, 23:52:40 UTC] {process_utils.py:186} INFO - Output:
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - <class 'pandas.core.frame.DataFrame'>
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - RangeIndex: 2386 entries, 0 to 2385
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - Data columns (total 12 columns):
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  #   Column               Non-Null Count  Dtype
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - ---  ------               --------------  -----
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  0   id                   2386 non-null   int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  1   hotel_name           2386 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  2   total_rooms          2386 non-null   int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  3   hotel_min_price      2386 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  4   hotel_max_price      2386 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  5   city                 2386 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  6   hotel_address        2386 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  7   stars                2386 non-null   int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  8   hotel_min_price_sum  2386 non-null   float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  9   hotel_min_price_cur  2386 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  10  hotel_max_price_sum  2386 non-null   float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  11  hotel_max_price_cur  2386 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - dtypes: float64(2), int64(3), object(7)
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - memory usage: 223.8+ KB
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - <class 'pandas.core.frame.DataFrame'>
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - RangeIndex: 6309 entries, 0 to 6308
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - Data columns (total 8 columns):
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  #   Column             Non-Null Count  Dtype
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - ---  ------             --------------  -----
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  0   id                 6309 non-null   int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  1   client_name        6309 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  2   client_profession  6309 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  3   client_gender      6309 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  4   client_email       6309 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  5   client_address     6309 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  6   client_age         6309 non-null   int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  7   client_phone       6309 non-null   object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - dtypes: int64(2), object(6)
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - memory usage: 394.4+ KB
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - <class 'pandas.core.frame.DataFrame'>
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - RangeIndex: 752663 entries, 0 to 752662
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - Data columns (total 15 columns):
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  #   Column                      Non-Null Count   Dtype
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - ---  ------                      --------------   -----
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  0   booking_id                  752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  1   hotel_id                    752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  2   room_id                     752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  3   booking_price               743676 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  4   booking_date_from           743676 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  5   booking_date_to             752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  6   total_days                  743676 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  7   booking_total_sum           752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  8   client_id                   752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  9   booking_price_null_tag      752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  10  booking_price_sum           752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  11  booking_price_cur           743676 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  12  booking_total_sum_null_tag  752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  13  booking_total_sum_sum       752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  14  booking_total_sum_cur       752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - dtypes: float64(3), int64(6), object(6)
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - memory usage: 86.1+ MB
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - <class 'pandas.core.frame.DataFrame'>
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - RangeIndex: 752663 entries, 0 to 752662
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - Data columns (total 41 columns):
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  #   Column                      Non-Null Count   Dtype
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - ---  ------                      --------------   -----
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  0   booking_id                  752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  1   hotel_id                    752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  2   room_id                     752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  3   booking_price               743676 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  4   booking_date_from           743676 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  5   booking_date_to             752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  6   total_days                  743676 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  7   booking_total_sum           752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  8   client_id                   752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  9   booking_price_null_tag      752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  10  booking_price_sum           752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  11  booking_price_cur           743676 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  12  booking_total_sum_null_tag  752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  13  booking_total_sum_sum       752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  14  booking_total_sum_cur       752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  15  hotel_name                  752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  16  total_rooms                 752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  17  hotel_min_price             752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  18  hotel_max_price             752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  19  city                        752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  20  hotel_address               752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  21  stars                       752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  22  hotel_min_price_sum         752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  23  hotel_min_price_cur         752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  24  hotel_max_price_sum         752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  25  hotel_max_price_cur         752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  26  client_name                 752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  27  client_profession           752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  28  client_gender               752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  29  client_email                752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  30  client_address              752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  31  client_age                  752663 non-null  int64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  32  client_phone                752663 non-null  object
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  33  booking_price_rate          743676 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  34  booking_price_sum_rub       743676 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  35  booking_total_sum_rate      752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  36  booking_total_sum_sum_rub   752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  37  hotel_min_price_rate        752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  38  hotel_min_price_sum_rub     752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  39  hotel_max_price_rate        752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO -  40  hotel_max_price_sum_rub     752663 non-null  float64
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - dtypes: float64(13), int64(9), object(19)
+[2023-12-23, 23:53:13 UTC] {process_utils.py:190} INFO - memory usage: 235.4+ MB
+[2023-12-23, 23:53:13 UTC] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-23, 23:53:13 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l8_s8_hw, task_id=run_transform, execution_date=20231223T235205, start_date=20231223T235240, end_date=20231223T235313
+[2023-12-23, 23:53:13 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-23, 23:53:13 UTC] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+
+***   * /home/gbss/airflow/logs/dag_id=l8_s8_hw/run_id=manual__2023-12-23T23:52:05.942413+00:00/task_id=load_data/attempt=1.log
+[2023-12-23, 23:53:17 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: l8_s8_hw.load_data manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:53:17 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: l8_s8_hw.load_data manual__2023-12-23T23:52:05.942413+00:00 [queued]>
+[2023-12-23, 23:53:17 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-23, 23:53:17 UTC] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): load_data> on 2023-12-23 23:52:05.942413+00:00
+[2023-12-23, 23:53:17 UTC] {standard_task_runner.py:57} INFO - Started process 163094 to run task
+[2023-12-23, 23:53:17 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'l8_s8_hw', 'load_data', 'manual__2023-12-23T23:52:05.942413+00:00', '--job-id', '312', '--raw', '--subdir', 'DAGS_FOLDER/etl_s8_hw.py', '--cfg-path', '/tmp/tmp3g31vauv']
+[2023-12-23, 23:53:17 UTC] {standard_task_runner.py:85} INFO - Job 312: Subtask load_data
+[2023-12-23, 23:53:17 UTC] {task_command.py:416} INFO - Running <TaskInstance: l8_s8_hw.load_data manual__2023-12-23T23:52:05.942413+00:00 [running]> on host gbus
+[2023-12-23, 23:53:17 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='l8_s8_hw' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T23:52:05.942413+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-23T23:52:05.942413+00:00'
+[2023-12-23, 23:53:17 UTC] {base.py:73} INFO - Using connection ID 'postgresql_local_postgres' for task execution.
+[2023-12-23, 23:53:31 UTC] {python.py:194} INFO - Done. Returned value was: (0, '')
+[2023-12-23, 23:53:31 UTC] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=l8_s8_hw, task_id=load_data, execution_date=20231223T235205, start_date=20231223T235317, end_date=20231223T235331
+[2023-12-23, 23:53:31 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-23, 23:53:31 UTC] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
